@@ -10,8 +10,8 @@ on:
 jobs:
   run:
     runs-on: ubuntu-latest
-        env:                      # <--- 在这里加上 env 配置
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # 强制使用 Node.js 24
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
       - name: Convert deb to IPA
